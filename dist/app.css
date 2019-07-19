@@ -1,21 +1,24 @@
 body {
 	background: #A1FFCE;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #f6ffa8, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #f6ffa8, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: -webkit-linear-gradient(to right, #011f24, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3baebf, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 	font-family: "Nunito", sans-serif;
 }
-
-#cat {
-	color:black;
+.jumbotron {
+	background-image: url("https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80");
+	background-size: cover;
+	height:500px;
 }
+
+
 #mainNavbar {
 	font-size: 1.5rem;
 	font-weight: 100;
 }
 
 #mainNavbar .navbar-brand {
-	color: #5cdb76;
+	color: #011f24;
 	font-size: 1.5rem;
 	font-weight: 100;
 }
@@ -24,27 +27,29 @@ background: linear-gradient(to right, #f6ffa8, #A1FFCE); /* W3C, IE 10+/ Edge, F
 	color: white;
 }
 
-
-#mainNavbar .nav-link:hover {
-	color: #5cdb76;
+#headingGroup {
+	margin-left: 100px;
+	padding: 100px 0;
 }
 
-#headingGroup h1 {
-	color:#f2fff5;
+#mainNavbar .nav-link:hover {
+	color: #011f24;
 }
 
 #headingGroup span {
-	color: #5cdb76;
+	color: black;
 }
 #headingGroup h1 {
-	font-weight: 100;
-	font-size: 3rem;
+	font-weight: 300;
+	font-size: 4rem;
+	text-align: left;
+	color:#f2fff5;
 }
 
 @media (max-width: 1200px) {
 	#headingGroup h1 {
-	font-weight: 100;
-	font-size: 2rem;
+	font-weight: 200;
+	font-size: 3rem;
 }
 }
 #icon {
@@ -53,15 +58,17 @@ background: linear-gradient(to right, #f6ffa8, #A1FFCE); /* W3C, IE 10+/ Edge, F
 }
 
 .desc h2 {
-	color: #5cdb76;
+	color: #011f24;
 	font-weight: 100;
 	font-size: 2.5rem;
 
 }
 
+#first { 
+margin-top: 50px; }
 
 .desc p {
-	color:#0cc231;
+	color:#011f24;
 	font-weight: 100;
 	font-size: 1.125rem;
 	line-height:2;
@@ -73,9 +80,9 @@ background: linear-gradient(to right, #f6ffa8, #A1FFCE); /* W3C, IE 10+/ Edge, F
 }
 
 .navbar.scrolled {
-	background: #B3FFAB;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #12FFF7, #B3FFAB);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #12FFF7, #B3FFAB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #A1FFCE;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #011f24, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3baebf, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 	transition: background 1s;
 }
