@@ -159,9 +159,9 @@ body {
 .navbar.scrolled {
 	background:white;
 	transition: background 1s;
-	-webkit-box-shadow: 7px 7px 12px -4px rgba(0,0,0,0.75);
-	-moz-box-shadow: 7px 7px 12px -4px rgba(0,0,0,0.75);
-	box-shadow: 7px 7px 12px -4px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 0px 7px 12px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 7px 12px -4px rgba(0,0,0,0.75);
+	box-shadow: 0px 7px 12px -4px rgba(0,0,0,0.75);
 }
 
 #section2 {
