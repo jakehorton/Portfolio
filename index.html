@@ -15,26 +15,36 @@
 		<link href="https://fonts.googleapis.com/css?family=Poppins:500&display=swap" rel="stylesheet">
 
 		<!-- Link to CSS -->
-		<link rel="stylesheet" href="app.css">
+        <link rel="stylesheet" href="app.css">
+    
+        
 
 		<!-- fontawesome CDN -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+        
+        <!-- AOS -->
+        <link rel="stylesheet" href="aos.js">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 
+        <!-- Animate CDN
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"> -->
 
     </head>
     <body>
     	
 
-	<section class="container-fluid px-0 py-0">
-		<div id="section1" class="jumbotron jumbotron-fluid text-center my-0 justify-content-center">
+	<section>
+		<div id="parallax" class="jumbotron jumbotron-fluid text-center my-0 justify-content-center">
 			<div class="row justify-content-center">
-			<div id="headingGroup" class = "col-8">
-			<h1><p>Hello, World</p><p class="block">I am<span class="token">&lt;</span><span class="jake">Jake</span><span class="token">/&gt;</span></p></h1>
-			</div>
-		</div>
-		<a id= "top" class="ct-btn-scroll ct-js-btn-scroll arrow" href="#section2"><i id="arrow" class="fas fa-chevron-circle-down"></i></a>
-		</div>
-	</section>
+			<div id="headingGroup" class = "col-8" data-aos="fade-up" data-aos-duration="3000">
+            <h1><p>Hello, World</p><p class="block">I am<span class="token">&lt;</span><span class="jake">Jake</span><span class="token">/&gt;</span></p></h1>
+            </div>
+		</div >
+        <a data-aos="fade-up" data-aos-duration="5000" id= "top" class="ct-btn-scroll ct-js-btn-scroll arrow" href="#downarrow"><i id="arrow" class="fas fa-chevron-circle-down"></i></a>
+
+        </div>
+    </section>
+	
 
 	<!-- Nav Bar -->
 	<nav id="mainNavbar" class="navbar sticky-top navbar-dark navbar-expand-lg">
@@ -44,20 +54,23 @@
 		</button>
 		<div class="collapse navbar-collapse justify-content-center" id="navLinks">
 			<ul class="navbar-nav">
-				<li class="nav-item">
-					<a href="https://nameless-shore-68047.herokuapp.com" class="nav-link">YELPCAMP</a>
+                <li class="nav-item">
+					<a href="#about" class="nav-link">ABOUT</a>
 				</li>
 				<li class="nav-item">
-					<a href="https://5d309200141560017cf109ef--catchoftheday-jakehorton.netlify.com/" class="nav-link">CATCH OF THE DAY</a>
+					<a href="#yelpcamp" class="nav-link">YELPCAMP</a>
 				</li>
 				<li class="nav-item">
-					<a href="https://jakehorton.github.io/colourgame/" class="nav-link">COLOUR GAME</a>
+					<a href="#catch" class="nav-link">CATCH OF THE DAY</a>
+                </li>
+                <li class="nav-item">
+                        <a href="#todo" class="nav-link">TODO LIST</a>
+                </li>
+				<li class="nav-item">
+					<a href="#colourgame" class="nav-link">COLOUR GAME</a>
 				</li>
 				<li class="nav-item">
-					<a href="https://jakehorton.github.io/todolist/" class="nav-link">TODO LIST</a>
-				</li>
-				<li class="nav-item">
-					<a href="https://jakehorton.github.io/patatap/" class="nav-link">PATATAP(ISH)</a>
+					<a href="#patatap" class="nav-link">PATATAP(ISH)</a>
 				</li>
 				
 			</ul>
@@ -65,15 +78,16 @@
 	</nav>
 
 
-	<section class="container-fluid">
-		<!-- About Me -->
-		<div id="section2" class="start row align-items-center content">
+
+        <!-- About Me -->
+        <Section id="about">
+		<div id="downarrow" class="start row align-items-center content">
 			<div class="col-lg-6 col-sm-12 order-2 order-md-1">
-				<img src="https://i.imgur.com/rgqEjHI.jpg " class= "rounded-circle img-fluid">
+				<img src="https://i.imgur.com/rgqEjHI.jpg " class= "rounded-circle img-fluid imgpad" data-aos="fade-right" data-aos-duration="3000">
 			</div>
 			<div class="col-lg-6 col-sm-12 text-center order-1 order-md-2">
 				<div class="row justify-content-center">
-					<div class="col-10 col-lg-8 desc mb-5 mb-md-0">
+					<div class="col-10 col-lg-8 desc mb-5 mb-md-0" data-aos="fade-up" data-aos-duration="3000">
 						<h2>About</h2>
 						<p><i id="icon" class="fas fa-user-graduate d-none d-lg-inline"></i></p>
 						<p class="lead">Hi!</p> <p> My name is Jake Horton <em>BSc MSc</em>, and I'm an ex-Laboratory Technician who is currently mid free-fall after taking the leap in to all things Web Development.</p>
@@ -84,20 +98,23 @@
 					</div>
 				</div>
 			</div>
-		</div>
+        </div>
+        </Section>
 
-	</section>
-
+	
+        <section class="normal">
 		<div id= "portfolio" >
 			<h1 id="portfolio" class="normal">Projects</h1>
-		</div>
+        </div>
+    </section>
 
-		<section class="container-fluid">
-		<!-- YelpCamp -->
+		
+        <!-- YelpCamp -->
+        <section id="yelpcamp">
 		<div class="row align-items-center content alternate">
 			<div class="col-md-6 col-sm-12 text-center">
 				<div class="row justify-content-center">
-					<div class="col-10 col-lg-8 desc mb-5 mb-md-0">
+					<div class="col-10 col-lg-8 desc mb-5 mb-md-0" data-aos="fade-right" data-aos-duration="3000">
 						<h2>YelpCamp</h2>
 						<p><i id="icon" class="fab fa-node-js d-none d-lg-inline"></i></p>
 						<p class="lead">YelpCamp is a camping database built using Node.js, Express and MongoDB. The application uses RESTful routing and features user authentication and authorisation, as well as a Google Maps API. Users can create an account, login, and then go on to create and (with the right permissions) edit their own campsites! </p>
@@ -106,35 +123,38 @@
 			</div>
 			<div class="col-md-6 col-sm-12">
 				<a href="https://nameless-shore-68047.herokuapp.com">
-				<img src="https://i.imgur.com/csxwO9K.jpg" class= "rounded-circle img-fluid">
+				<img src="https://i.imgur.com/csxwO9K.jpg" class= "rounded-circle img-fluid" data-aos="fade-left" data-aos-duration="3000">
 				</a>
 			</div>
-		</div>
+        </div>
+        </section>
 
-		<!-- Catch of the day -->
-		<div class="row align-items-center content normal">
+        <!-- Catch of the day -->
+        <section id="catch">
+		<div id="parallax" class="row align-items-center content normal">
 			<div class="col-md-6 col-sm-12 order-2 order-md-1">
 				<a href="https://5d309200141560017cf109ef--catchoftheday-jakehorton.netlify.com/">
-				<img src="https://i.imgur.com/7NNvaTj.jpg" class= "rounded-circle img-fluid">
+				<img src="https://i.imgur.com/7NNvaTj.jpg" class= "rounded-circle img-fluid imgpad" data-aos="fade-right" data-aos-duration="3000">
 				</a>
 			</div>
 			<div class="col-md-6 col-sm-12 text-center order-1 order-md-2">
 				<div class="row justify-content-center">
-					<div class="col-10 col-lg-8 desc mb-5 mb-md-0">
+					<div class="col-10 col-lg-8 desc mb-5 mb-md-0" data-aos="fade-down" data-aos-duration="3000">
 						<h2>Catch Of The Day</h2>
 						<p><i id="icon" class="fab fa-react d-none d-lg-inline"></i></p>
 						<p class="lead">Catch Of The Day is a React app in the form of an interactive Fish Market - which is obviously just what you came here for! </p> <p> User authentication is required via either Github or Facebook logins, whereby users can then add/remove fish from their order or even add/remove entirely new fish from the database. The UI is made even firendlier with a rolling total and a few animations.</p>
 					</div>
 				</div>
 			</div>
-		</div>
+        </div>
+        </section>
 
-		<!-- Todo list -->
+        <!-- Todo list -->
+        <section id="todo">
 		<div class="row align-items-center content alternate">
 			<div class="col-md-6 col-sm-12 text-center">
 				<div class="row justify-content-center">
-					<div class="col-10 col-lg-8 desc mb-5 mb-md-0">
-						
+					<div class="col-10 col-lg-8 desc mb-5 mb-md-0"data-aos="fade-right" data-aos-duration="3000">						
 						<h2>Henry Pooter's Todo List</h2>
 						<p><i id="icon" class="fab fa-js-square d-none d-lg-inline"></i></p>
 						<p class="lead">Everyone's second (or third (or maybe even fourth)) favourite wizard needs a way of remembering what he needs to do! This interactive Todo List app is built using jQuery and allows users to cross-through completed tasks, add new tasks, and delete tasks they're 100% definitely sure they've probably done. </p>
@@ -143,38 +163,42 @@
 			</div>
 			<div class="col-md-6 col-sm-12">
 				<a href="https://jakehorton.github.io/todolist">
-				<img src="https://i.imgur.com/Hpz5P0j.jpg" class= "rounded-circle img-fluid">
+				<img src="https://i.imgur.com/Hpz5P0j.jpg" class= "rounded-circle img-fluid" data-aos="fade-left" data-aos-duration="3000">
 				</a>
 			</div>
-		</div>
+        </div>
+        </section>
 
-		<!-- Colour game -->
+        <!-- Colour game -->
+        <section id="colourgame">
 		<div class="row align-items-center content normal">
 			<div class="col-md-6 col-sm-12 order-2 order-md-1">
 				<a href="https://jakehorton.github.io/colourgame/">
-					<img src="https://i.imgur.com/UcO4a60.jpg" class= "rounded-circle img-fluid" ></a>
+					<img src="https://i.imgur.com/UcO4a60.jpg" class= "rounded-circle img-fluid imgpad revealOnScroll" data-aos="fade-right" data-aos-duration="3000"></a>
 				
 			</div>
 			<div class="col-md-6 col-sm-12 text-center order-1 order-md-2">
 				<div class="row justify-content-center">
-					<div class="col-10 col-lg-8 desc mb-5 mb-md-0">
-						<h2>The Great RGB Colour Game</h2>
+					<div class="col-10 col-lg-8 desc mb-5 mb-md-0" data-aos="fade-up" data-aos-duration="3000">
+						<h2>The great RGB colour Game</h2>
 						<p><i id="icon" class="fab fa-js-square d-none d-lg-inline"></i></p>
-						<p class="lead">It's like Bake Off, but without the cakes. Or Paul Hollywood.</p>
+						<p class="lead">It's like Bake Off, but without the Cakes. Or Paul Hollywood.</p>
 						<p> This Vanilla JS interactive app generates random RGB colour squares that users must match with that of the RGB code on-screen. If six choices is too hard for you, switch to easy mode and you'll only have to deal with three! 
 					</div>
 				</div>
 			</div>
-		</div>
+        </div>
+        </section>
 		
 		
 		
-		<!-- Patatap -->
+        <!-- Patatap -->
+        <section id="patatap">
 		<div class="row align-items-center content alternate">
 			
-			<div class="col-md-6 col-sm-12text-center">
+			<div class="col-md-6 col-sm-12 text-center">
 				<div class="row justify-content-center">
-					<div class="col-10 col-lg-8 desc mb-5 mb-md-0">
+					<div class="col-10 col-lg-8 desc mb-5 mb-md-0" data-aos="fade-down" data-aos-duration="3000">
 						<h2>Patatap(ish)</h2>
 						<p><i id="icon" class="fab fa-js-square d-none d-lg-inline"></i></p>
 						<p class="lead">Remember the keyboards at school that had the DJ function? Imagine that, but at home. Whenever you like. All day.</p>
@@ -184,17 +208,31 @@
 			</div>
 			<div class="col-md-6 col-sm-12">
 				<a href="https://jakehorton.github.io/patatap/">
-				<img src="https://i.imgur.com/7PS5JjL.jpg" class= " rounded-circle img-fluid">
+				<img src="https://i.imgur.com/7PS5JjL.jpg" class= " rounded-circle img-fluid" data-aos="fade-left" data-aos-duration="3000">
 				</a>
 			</div>
-		</div>
+        </div>
+        </section>
 
-	<div id="bottom">
-		<a class="ct-btn-scroll ct-js-btn-scroll arrow" href="#section1"><i id="bottom" class="fas fa-chevron-circle-up"></i></a>
+	<!-- <div id="bottom">
+		<a class="ct-btn-scroll ct-js-btn-scroll arrow" href="#uparrow"><i id="bottom" class="fas fa-chevron-circle-up"></i></a>
 	</div>
-	</section>
+     -->
+     
+     <script src="app.js"></script>
+
+     <script type="text/javascript"> 
+     AOS.init(
+         {
+             duration: 1000, 
+         }
+     );
+     </script>
+
+
 
     	<script>
+
 			$(function(){
 				$(document).scroll(function(){
 					var $nav = $("#mainNavbar");
@@ -215,8 +253,12 @@
     } 
   });
 });
+        </script>
+        
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
-			$('.content').addClass('animated bounceOutLeft');
-		</script>
+    <script>
+        AOS.init();
+    </script>
     </body>
 </html>
