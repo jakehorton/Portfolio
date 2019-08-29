@@ -189,7 +189,9 @@ body {
     background-image: url("https://i.imgur.com/csxwO9K.jpg");
     background-size: cover;
   }
-  
+  .wordpresspic {
+    background-size: cover;
+  }
   .item {
     z-index: 2;
     opacity: 1;
@@ -224,6 +226,22 @@ body {
       background-size: cover;
       height:50vh;
     }
+
+    .item6 {
+      background-image: url("https://i.imgur.com/s8wPmgk.jpg");
+      background-size: cover;
+      height:50vh;
+    }
+
+    .item7 {
+      background-image: url("https://i.imgur.com/gRoURw8.jpg");
+      height: 50vh;
+      width:66vh;
+      background-size: cover;
+      background-position-y: 50%;
+      
+    }
+    
 
 
   .text{
@@ -268,6 +286,10 @@ body {
   height: 105vh;
   }
   
+  #portfolio {
+    height: 1300px;
+  }
+
   #contact {
     padding-top: 10vh;
     background-color: #363231;
