@@ -164,7 +164,7 @@ body {
   text-align: center;
   font-size: 5rem;
   background: #ebebeb;
-  height: 130vh;
+  height: 180vh;
   }
 
   .projects {
@@ -284,10 +284,6 @@ body {
   .normal {
   background: #ebebeb;
   height: 105vh;
-  }
-  
-  #portfolio {
-    height: 1300px;
   }
 
   #contact {
